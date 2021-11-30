@@ -1,0 +1,16 @@
+[connection]
+command= echo "  爵 : $(if ping -c 1 8.8.8.8 > /dev/null 2>&1; then echo "Connected"; else echo "No Connection"; fi)  "
+interval=30
+color=#38A0EE
+
+[volume]
+command= echo "  墳 : $(amixer get Master | awk -F ' ' 'NR == 5 {print $3}')%  "
+interval=once
+signal=10
+color=#38A0EE
+
+[date]
+command= echo "    : $(date +"%a %b %d %R")   "
+interval=30
+color=#38A0EE
+
