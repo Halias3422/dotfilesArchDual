@@ -1,0 +1,21 @@
+1. run archinstall on boot - choose i3-gaps installation
+
+2. install packages: git firefox alsa-utils clang cups cups-pdf discord dotnet-sdk fd feh gzip htop lib32-gcc-libs libreoffice lightdm-webkit2-greeter lightdm-webkit-theme-litarvan nemo neovim ninja picom piper python-pip ripgrep rofi tk tmux usbutils xbindkeys xorg-xinput xorg-xrandr zsh kitty bat npm
+
+3. install oh-my-zsh
+
+4. install Hack nerd font: go to nerd-fonts github, download one of each of the
+four variants of font. Add them to ~/.local/share/fonts
+
+5. install powerlevel10k and zsh-autosuggestions plugins for oh-my-zsh
+
+6. install neovim plugins (PlugInstall)
+
+7. install nvim-lsp servers (check lspconfig github page for info)
+
+8. install greeter :
+	edit /etc/lightdm/lightdm.conf and set greeter-session=lightdm-webkit2-greeter
+	and set display-setup-script=xrandr --output HDMI-0 --primary --output DVI-D-0 --right-of HDMI-0
+	edit /etc/lightdm/lightdm-webkit2-greeter.conf and set theme or webkit-theme to litarvan
+
+4. copy content from dotfiles repo to home
