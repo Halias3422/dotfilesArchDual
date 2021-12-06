@@ -34,15 +34,20 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
-Plug 'axelf4/vim-strip-trailing-whitespace'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 call plug#end()
+
+" COC Config
+"source ~/.config/nvim/vimscript/coc.vim
 
 source ~/.config/nvim/vimscript/nvim-tree.vim
 
 "bufferline setup
 nnoremap <silent><Tab> :BufferLineCycleNext<CR>
 nnoremap <silent><S-Tab> :BufferLineCyclePrev<CR>
+
 
 " PLUGS CALL
 lua require('halias')
@@ -73,6 +78,9 @@ set cursorline
 hi Cursorline guibg=gray13
 hi Normal guibg=#181A1B
 colorscheme molokai
+
+
+
 
 set noshowmode
 set signcolumn=auto

@@ -132,3 +132,6 @@ zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias luamake=/home/halias/.config/nvim/lua/lua-language-server/3rd/luamake/luamake
+
+# add pylsp to path for nvim-lsp python
+export PATH=$PATH:/home/halias/.local/bin
