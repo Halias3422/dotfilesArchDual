@@ -118,7 +118,7 @@ bindsym $mod+a focus parent
 
 # custom change keyboard layout
 bindsym Mod4+k exec "sh $HOME/Documents/scripts/change_keyboard_layout.sh"
-
+bindsym Mod4+l exec "dm-tool switch-to-greeter"
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -218,12 +218,12 @@ gaps inner 2
 gaps outer 1
 
 # exec programs on startup
-exec export PATH=$PATH:/usr/bin/snap:/home/halias/.local/bin
-exec picom --experimental-backends --backend glx --xrender-sync-fence --no-fading-openclose
-exec xrandr --output HDMI-0 --left-of --output DVI-D-0
-exec xset -dpms
-exec xset s off
-exec echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
+exec --no-startup-id export PATH=$PATH:/usr/bin/snap:/home/halias/.local/bin
+exec --no-startup-id picom --experimental-backends --backend glx --xrender-sync-fence --no-fading-openclose
+exec --no-startup-id xrandr --output HDMI-0 --left-of DVI-D-0
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s off
+exec --no-startup-id echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
 
 
 # custom output workspace affectation

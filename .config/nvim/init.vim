@@ -36,18 +36,31 @@ Plug 'tpope/vim-surround'
 
 Plug 'axelf4/vim-strip-trailing-whitespace'
 
+"extends Find mode
+Plug 'phaazon/hop.nvim'
+
+"Zoom on split
+Plug 'szw/vim-maximizer'
+
 call plug#end()
 
 source ~/.config/nvim/vimscript/nvim-tree.vim
 
 "bufferline setup
-nnoremap <silent><Tab> :BufferLineCycleNext<CR>
-nnoremap <silent><S-Tab> :BufferLineCyclePrev<CR>
+nnoremap <silent><space>] :BufferLineCycleNext<CR>
+nnoremap <silent><space>[ :BufferLineCyclePrev<CR>
+
+"Maximizer config
+let g:maximizer_set_default_mapping = 0
+" let g:maximizer_default_mapping_key = '<space>m'
+" let g:maximizer_set_mapping_with_bang = 1
+nnoremap <silent><space>m :MaximizerToggle!<CR>
+
 
 " PLUGS CALL
 lua require('halias')
 
-"Plugs remaps
+"Lsp
 nmap <space>tt <Plug>(toggle-lsp-diag)
 nmap <space>tu <Plug>(toggle-lsp-diag-underline)
 nmap <space>tv <Plug>(toggle-lsp-diag-vtext)
@@ -58,6 +71,29 @@ nnoremap<C-g> :Telescope git_files<Cr>
 nnoremap <C-p> :Telescope live_grep<Cr>
 nnoremap <C-b> :Telescope buffers<Cr>
 nnoremap <C-y> :Telescope lsp_document_diagnostics<CR>
+
+"Hop
+nnoremap <space>hw :HopWord<Cr>
+nnoremap <space>p :HopPattern<Cr>
+nnoremap <space>hc :HopChar1<Cr>
+nnoremap <space>hC :HopChar2<Cr>
+nnoremap <space>hl :HopLine<Cr>
+
+
+"Split resize remaps
+nnoremap <C-Right> :vertical resize +5<CR>
+nnoremap <C-Left> :vertical resize -5<CR>
+nnoremap <C-Down> :resize +5<CR>
+nnoremap <C-Up> :resize -5<CR>
+
+"move lines up - down
+
+" nnoremap <space>j :m .+1<CR>==
+" nnoremap <space>k :m .-2<CR>==
+" inoremap <space>j <Esc>:m .+1<CR>==gi
+" inoremap <space>k <Esc>:m .-2<CR>==gi
+" vnoremap <space>j :m '>+1<CR>gv=gv
+" vnoremap <space>k :m '<-2<CR>gv=gv
 
 
 " My vimrc
@@ -108,7 +144,7 @@ nmap <C-S> :w<CR>
 imap <C-S> <Esc>:w<CR>
 nmap <S-J> 10j<CR>
 nmap <S-K> 10k<CR>
-nmap <Space>k :bd<CR>
+nmap <Space><S-K> :bd<CR>
 nnoremap Y y$
 
 " shortcuts for splits navigation
