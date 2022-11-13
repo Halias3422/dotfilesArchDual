@@ -25,10 +25,10 @@ map("n", "<C-Down>", ":resize +5<CR>", { noremap = true })
 map("n", "<C-Up>", ":resize -5<CR>", { noremap = true })
 
 -- escape insert mode
-map("i", "jj", "<ESC>", {})
+map("i", "jk", "<ESC>", {})
 
 -- remove search highlight
-map("n", "<Space>", ":nohlsearch<CR>", { silent = true, noremap = true })
+map("n", "<Space>", ":nohlsearch | let @/ = '' <CR>", { silent = true, noremap = true })
 
 -- plugins keymaps
 
@@ -37,6 +37,7 @@ map("n", "<Space>m", ":MaximizerToggle!<CR>", { silent = true, noremap = true })
 
 -- nvim-tree
 map("n", "<C-n>", ":NvimTreeToggle<CR>", { silent = true, noremap = true })
+map("n", "<Space>n", ":NvimTreeFocus<CR>", { silent = true, noremap = true })
 
 -- telescope
 map("n", "<C-f>", ":Telescope find_files<CR>", { noremap = true })
@@ -56,3 +57,16 @@ map("n", "<Space>[", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true
 map("n", "<Space>bd", ":bdelete<CR>", { noremap = true, silent = true })
 map("n", "<Space>bg", ":BufferLinePick<CR>", { noremap = true })
 map("n", "<Space>bk", ":BufferLinePickClose<CR>", { noremap = true })
+
+-- vim-move
+map("n", "<Space>j", "<Plug>MoveLineDown", { noremap = true })
+map("n", "<Space>k", "<Plug>MoveLineUp", { noremap = true })
+map("n", "<Space>h", "<Plug>MoveCharLeft", { noremap = true })
+map("n", "<Space>l", "<Plug>MoveCharRight", { noremap = true })
+
+-- svart
+map("n", "s", "<Cmd>Svart<CR>", { noremap = true })
+map("n", "S", "<Cmd>SvartRegex<CR>", { noremap = true })
+
+-- which keymaps
+map("n", "g?", ":Fe ~/.config/nvim/keymaps.txt<CR>", { noremap = true })

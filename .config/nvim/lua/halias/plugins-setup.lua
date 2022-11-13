@@ -96,11 +96,20 @@ return require("packer").startup(function(use)
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use("windwp/nvim-ts-autotag")
 
-	-- leap
-	use("ggandor/leap.nvim")
-
 	-- bufferline
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
+
+	-- open floating window
+	use("metalelf0/nvim-floatedit")
+
+	-- targets
+	use("wellle/targets.vim")
+
+	-- vim-move
+	use("matze/vim-move")
+
+	-- svart (find motions)
+	use("https://gitlab.com/madyanov/svart.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

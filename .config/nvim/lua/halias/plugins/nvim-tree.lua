@@ -8,7 +8,15 @@ vim.g.loaded_netrw = 1
 vim.g.load_netrwPlugin = 1
 
 nvimtree.setup({
-	open_on_setup = true,
+	open_on_setup = false,
+	actions = {
+		open_file = {
+			quit_on_open = true,
+		},
+	},
+	diagnostics = {
+		enable = true,
+	},
 	view = {
 		mappings = {
 			list = {

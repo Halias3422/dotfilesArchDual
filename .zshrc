@@ -111,6 +111,7 @@ source $ZSH/oh-my-zsh.sh
  alias shut="shutdown now"
  alias t="$HOME/Documents/scripts/start_tmux_session.sh"
  alias vim="nvim"
+ alias vimconf="nvim ~/.config/nvim"
  alias ls="ls -la --color=auto"
  alias preview="fzf --preview='bat --color=always --style=plain {}'"
  alias prev="preview"

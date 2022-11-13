@@ -20,12 +20,10 @@ opt.smartcase = true
 
 -- cursor line
 opt.cursorline = true
-api.nvim_set_hl(0, "Cursorline", { bg = "gray13" })
 
 -- appearance
 opt.termguicolors = true
 opt.signcolumn = "yes"
-api.nvim_set_hl(0, "Normal", { bg = "#181A1B" })
 
 -- backspace
 opt.backspace = "indent,eol,start"
@@ -46,28 +44,18 @@ opt.splitbelow = true
 -- highlight search
 opt.hlsearch = true
 opt.incsearch = true
-api.nvim_set_hl(0, "Incsearch", { fg = "blue" })
+-- api.nvim_set_hl(0, "Incsearch", { fg = "blue" })
 
 -- visual chars
 opt.list = true
 opt.listchars = { tab = "> ", trail = "-", extends = ">", precedes = "<", nbsp = "+" }
 api.nvim_create_autocmd("BufWritePre", { pattern = "*", command = [[%s/\s\+$//e]] })
 
--- background color
-api.nvim_create_autocmd("ColorScheme", { pattern = "*", command = "hi Normal guibg=#181818" })
-
--- number line color
-api.nvim_create_autocmd("ColorScheme", { pattern = "*", command = "hi LineNr guibg=#262626" })
-api.nvim_create_autocmd("ColorScheme", { pattern = "*", command = "hi LineNr guifg=#999999" })
-
--- split line color
-api.nvim_create_autocmd("ColorScheme", { pattern = "*", command = "hi VertSplit guifg=#999999" })
-
 -- auto close nvim-tree if last buffer
-api.nvim_create_autocmd("BufEnter", {
-	command = "if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif",
-	nested = true,
-})
+-- api.nvim_create_autocmd("BufEnter", {
+-- 	command = "if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif",
+-- 	nested = true,
+-- })
 
 -- hide default mode line
 opt.showmode = false

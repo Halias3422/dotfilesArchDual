@@ -1,0 +1,64 @@
+HELP I CAN'T REMEMBER MY KEYMAPS !!
+
+-- split resize
+<C-Right>, <C-Left>, <C-Down>, <C-Up>
+
+-- vim-maximizer
+<space>m 			maximize current buffer
+
+-- nvim-tree
+<C-n> 				toggle files tree
+<Space>n 			focus on files tree
+
+-- telescope
+<C-f> 				find_files
+<C-g> 				git_files
+<C-p> 				live_grep
+<C-b> 				buffers
+<C-y> 				lsp_document-diagnostics
+
+-- toggle-lsp-diagnostics
+<space>tt 		toggle-lsp-diag
+<space>tu 		toggle-lsp-diag-underline
+<space>tv 		toggle-lsp-diag-vtext
+
+-- bufferline
+<space>] 			go to prev buffer
+<space>[ 			go to next buffer
+<space>bd 		close current buffer
+<space>bg 		pick buffer with letter
+<space>bk 		close buffer with letter
+
+-- nvim-floatedit
+g? 						open this file in a floating window
+
+-- lsp-config
+gf 						show definitions, references
+gD 						go to declaration
+gd 						see definition
+gi 						go to implementation
+<leader>ca 		see available code actions
+<leader>rn 		smart rename
+<leader>d 		show diagnostic for line
+<leader>d 		show diagnostic for cursor
+[d 						jump to next diagnostic in buffer
+]d 						jump to previus diagnostic in buffer
+H 						show documentation for symbol under the cursor
+<leader>o 		see outline on right hand side
+
+-- gitsigns
+<leader>gn 		go to next git diff hunk
+<leader>gN 		go to previous git diff hunk
+<leader>gb 		toggle git blame in floating window
+<leader>gB 		toggle git blame in current line
+<leader>dt 		toggle git diff (diffThis)
+
+-- vim-move
+<Space>j 				move line down
+<Space>k 				move line up
+<Space>l 				move char left
+<Space>h 				move char right
+
+-- svart
+s 						search for character
+S 						search for pattern

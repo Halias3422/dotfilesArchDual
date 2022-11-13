@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/halias/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["leap.nvim"] = {
-    loaded = true,
-    path = "/home/halias/.local/share/nvim/site/pack/packer/start/leap.nvim",
-    url = "https://github.com/ggandor/leap.nvim"
-  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/halias/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -164,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/halias/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-floatedit"] = {
+    loaded = true,
+    path = "/home/halias/.local/share/nvim/site/pack/packer/start/nvim-floatedit",
+    url = "https://github.com/metalelf0/nvim-floatedit"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/halias/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -204,6 +204,16 @@ _G.packer_plugins = {
     path = "/home/halias/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["svart.nvim"] = {
+    loaded = true,
+    path = "/home/halias/.local/share/nvim/site/pack/packer/start/svart.nvim",
+    url = "https://gitlab.com/madyanov/svart.nvim"
+  },
+  ["targets.vim"] = {
+    loaded = true,
+    path = "/home/halias/.local/share/nvim/site/pack/packer/start/targets.vim",
+    url = "https://github.com/wellle/targets.vim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/halias/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -233,6 +243,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/halias/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
+  },
+  ["vim-move"] = {
+    loaded = true,
+    path = "/home/halias/.local/share/nvim/site/pack/packer/start/vim-move",
+    url = "https://github.com/matze/vim-move"
   },
   ["vim-searchhi"] = {
     loaded = true,
