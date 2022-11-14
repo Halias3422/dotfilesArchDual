@@ -111,6 +111,15 @@ return require("packer").startup(function(use)
 	-- svart (find motions)
 	use("https://gitlab.com/madyanov/svart.nvim")
 
+	-- nvim-peekup (yank/paste registers management)
+	use("gennaro-tedesco/nvim-peekup")
+
+	--nvim-scrollbar
+	use("petertriho/nvim-scrollbar")
+
+	-- trouble
+	use("folke/trouble.nvim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then

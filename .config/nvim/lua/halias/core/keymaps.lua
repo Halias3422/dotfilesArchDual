@@ -68,5 +68,11 @@ map("n", "<Space>l", "<Plug>MoveCharRight", { noremap = true })
 map("n", "s", "<Cmd>Svart<CR>", { noremap = true })
 map("n", "S", "<Cmd>SvartRegex<CR>", { noremap = true })
 
+-- trouble
+map("n", "<Space>xx", "<Cmd>TroubleToggle<CR>", { noremap = true })
+map("n", "<Space>xw", "<Cmd>TroubleToggle workspace_diagnostics<CR>", { noremap = true })
+map("n", "<Space>xd", "<Cmd>TroubleToggle document_diagnostics<CR>", { noremap = true })
+map("n", "<Space>xq", "<Cmd>TroubleToggle quickfix<CR>", { noremap = true })
+
 -- which keymaps
 map("n", "g?", ":Fe ~/.config/nvim/keymaps.txt<CR>", { noremap = true })

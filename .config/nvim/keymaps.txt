@@ -62,3 +62,9 @@ H 						show documentation for symbol under the cursor
 -- svart
 s 						search for character
 S 						search for pattern
+
+-- trouble (diagnostics)
+<Space>xx 		toggle trouble
+<Space>xw 		toggle trouble for workspace
+<Space>xd 		toggle trouble for document
+<Space>xq 		toggle troube quickfix
