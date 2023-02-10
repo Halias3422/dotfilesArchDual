@@ -29,7 +29,7 @@ opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
 
 -- clipboard
-opt.clipboard:append("unnamedplus")
+opt.clipboard:append("unnamed")
 
 -- disable auto-comment on new line
 api.nvim_create_autocmd(

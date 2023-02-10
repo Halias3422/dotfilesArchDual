@@ -4,7 +4,7 @@ interval=30
 color=#38A0EE
 
 [volume]
-command= echo "  墳 : $(amixer get Master | awk -F ' ' 'NR == 5 {print $3}')%  "
+command= echo "  墳 : $(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))  "
 interval=once
 signal=10
 color=#38A0EE

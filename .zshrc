@@ -110,12 +110,14 @@ source $ZSH/oh-my-zsh.sh
  alias log="dm-tool switch-to-greeter"
  alias shut="shutdown now"
  alias t="$HOME/Documents/scripts/start_tmux_session.sh"
+ alias monoff="$HOME/Documents/scripts/turn_off_secondary_monitors.sh"
+ alias monon="$HOME/Documents/scripts/turn_on_secondary_monitors.sh"
  alias vim="nvim"
- alias vimconf="nvim ~/.config/nvim"
  alias ls="ls -la --color=auto"
  alias preview="fzf --preview='bat --color=always --style=plain {}'"
  alias prev="preview"
  alias h="cd $HOME"
+ alias vimconf="nvim ~/.config/nvim"
 
  #CURR_WORKSPACE SCRIPTS
  alias setcurr="sh $HOME/Documents/scripts/set_curr_workspace.sh"
@@ -126,6 +128,8 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=238"
 export ZVM_TERM=xterm-256color
 source $HOME/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -136,3 +140,10 @@ alias luamake=/home/halias/.config/nvim/lua/lua-language-server/3rd/luamake/luam
 
 # add pylsp to path for nvim-lsp python
 export PATH=$PATH:/home/halias/.local/bin
+export PATH=$PATH:/usr/lib/docker/cli-plugins
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if [ -e /home/halias/.nix-profile/etc/profile.d/nix.sh ]; then . /home/halias/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
