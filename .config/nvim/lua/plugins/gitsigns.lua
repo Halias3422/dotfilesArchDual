@@ -1,3 +1,6 @@
+return {
+	"lewis6991/gitsigns.nvim",
+	config = function()
 local gitsigns_setup, gitsigns = pcall(require, "gitsigns")
 if not gitsigns_setup then
 	return
@@ -42,3 +45,5 @@ gitsigns.setup({
 		map("n", "<leader>dt", gs.diffthis)
 	end,
 })
+	end,
+}

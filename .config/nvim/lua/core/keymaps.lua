@@ -1,7 +1,5 @@
 local map = vim.api.nvim_set_keymap
 
-vim.g.mapleader = " "
-
 -- quitting and saving
 map("n", "<C-Q>", ":q<CR>", {})
 map("i", "<C-Q>", "<Esc>:q<CR>", {})
@@ -31,6 +29,12 @@ map("i", "jk", "<ESC>", {})
 map("n", "<Space>", ":nohlsearch | let @/ = '' <CR>", { silent = true, noremap = true })
 
 -- plugins keymaps
+
+-- vim-tmux-navigator
+map("n", "<c-h>", ":TmuxNavigateLeft<cr>", { silent = true, noremap = true })
+map("n", "<c-l>", ":TmuxNavigateRight<cr>", { silent = true, noremap = true })
+map("n", "<c-j>", ":TmuxNavigateDown<cr>", { silent = true, noremap = true })
+map("n", "<c-k>", ":TmuxNavigateUp<cr>", { silent = true, noremap = true })
 
 -- vim-maximizer
 map("n", "<Space>m", ":MaximizerToggle!<CR>", { silent = true, noremap = true })
