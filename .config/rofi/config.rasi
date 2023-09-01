@@ -1,6 +1,6 @@
 
 configuration {
-	font: "mono 14";
+	font: "mono 20";
 	location: 0;
 }
 
