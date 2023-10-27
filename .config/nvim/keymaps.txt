@@ -16,6 +16,7 @@ HELP I CAN'T REMEMBER MY KEYMAPS !!
 <C-p> 				live_grep
 <C-b> 				buffers
 <C-y> 				lsp_document-diagnostics
+<space>gh			git_bcommits (show commits history for current buffer)
 
 -- toggle-lsp-diagnostics
 <space>tt 		toggle-lsp-diag
