@@ -17,6 +17,7 @@ HELP I CAN'T REMEMBER MY KEYMAPS !!
 <C-b> 				buffers
 <C-y> 				lsp_document-diagnostics
 <space>gh			git_bcommits (show commits history for current buffer)
+gD 						go to declaration
 
 -- toggle-lsp-diagnostics
 <space>tt 		toggle-lsp-diag
@@ -35,7 +36,6 @@ g? 						open this file in a floating window
 
 -- lsp-config
 gf 						show definitions, references
-gD 						go to declaration
 gd 						see definition
 gi 						go to implementation
 <leader>ca 		see available code actions
@@ -69,3 +69,28 @@ S 						search for pattern
 <Space>xw 		toggle trouble for workspace
 <Space>xd 		toggle trouble for document
 <Space>xq 		toggle troube quickfix
+
+-- copilot
+
+-- code related
+<Space>cce		CopilotChatExplain - Explain code
+<Space>cct		CopilotChatTests - Generate tests
+<Space>ccr		CopilotChatReview - Review code
+<Space>ccR		CopilotChatRefactor - Refactor code
+<Space>ccf		CopilotChatFixCode - Fix code
+
+-- text related
+<Space>ccs		CopilotChatSummarize - Summarize text
+<Space>ccS		CopilotChatSpelling - Correct spelling
+<Space>ccw		CopilotChatWording - Improve wording
+<Space>ccc		CopilotChatConcise - Make text concise
+
+-- visual mode
+<Space>ccv		CopilotChatVisual - Open in vertical split
+<Space>ccx		CopilotChatInPlace - Run in-place code
+
+-- ask input
+<Space>cci		CopilotChatInput - Ask input
+
+-- debug
+<Space>ccD		CopilotChatDebugInfo - Debug Info

@@ -8,6 +8,9 @@ vim.api.nvim_create_autocmd("ColorScheme", { pattern = "*", command = "hi LineNr
 -- split line color
 vim.api.nvim_create_autocmd("ColorScheme", { pattern = "*", command = "hi VertSplit guifg=#999999" })
 
+-- floating window borders
+vim.api.nvim_create_autocmd("ColorScheme", { pattern = "*", command = "hi FloatBorder guifg=#606060" })
+
 local status, _ = pcall(vim.cmd, "colorscheme ofirkai")
 if not status then
 	print("Colorscheme not found !")

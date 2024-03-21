@@ -14,4 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 -- experimental nvim loading optimizer
 vim.loader.enable()
 
-return require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {})
+return require("lazy").setup({
+	{ import = "plugins" },
+	{ import = "plugins.lsp" },
+}, {})

@@ -50,6 +50,7 @@ map("n", "<C-p>", ":Telescope live_grep<CR>", { noremap = true })
 map("n", "<C-b>", ":Telescope buffers<CR>", { noremap = true })
 map("n", "<C-y>", ":Telescope lsp_document_diagnostics<CR>", { noremap = true })
 map("n", "<Space>gh", ":Telescope git_bcommits<CR>", { noremap = true })
+map("n", "gD", ":Telescope lsp_definitions<CR>", { noremap = true })
 
 -- toggle-lsp-diagnostics
 map("n", "<Space>tt", "<Plug>(toggle-lsp-diag)", { noremap = true })
